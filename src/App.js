@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import RuleHooks from './components/RuleHooks';
+import UseStateArray from './components/UseStateArray';
+import UseStateObj from './components/UseStateObj';
 
-function App() {
+const App = () => {
+
+//   //useState hooks use //
+// const [title, setTitle] = useState( "Hello react");
+
+
+//   const changeTitle = () =>{
+//     setTitle("Welcome to React!")
+    
+// // condition for changing the title while clicking on button//
+//     let val = title;
+//     // if(val === "Hello react"){
+//     //   setTitle("Welcome to React!")
+//     // }else{
+//     //   setTitle("Hello react")
+//     // }
+// // * Ternary operators
+
+//  (val ==="Hello react") ? setTitle("Welcome to React!") : setTitle("Hello react")
+
+  // }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <h1>{title}</h1>
+      <button className='btn' onClick={changeTitle}>Click Me</button> */}
+    {/* <RuleHooks/> */}
+
+    <UseStateArray/>
+    {/* <UseStateObj/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
