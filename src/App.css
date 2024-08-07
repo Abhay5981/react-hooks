@@ -1,26 +1,43 @@
 body {
-  background-color: rgba(20,25,50,0.5);
-}
-h1 {
-  color: #fff;
-  text-align: center;
-  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #34495e;
+  /* display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  color: aliceblue;
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #333;
-  box-shadow: 0 0 10px rgba(190, 189, 189, 0);
+  align-items: center;
+  justify-content: center;
+}
+
+.App 
+{
+  text-align: center;
+}
+
+h1 {
+  min-width: 20rem;
+  width: 60rem;
+  padding: 2rem 2rem;
+  background-color: azure;
+  color: #2980b9;
+  border-radius: 5rem;
+  box-shadow: 0rem 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  text-align: center;
 
 }
 button {
   background-color:red;
   color: #fff;
-  text-align: center;
   padding: 10px 20px;
-  margin: 5px,auto;
   border: black;
+  
+
 }
 
 div, button {
@@ -28,6 +45,11 @@ div, button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin: 10px auto;
+  font-size: large;
+
+  
 }
 
 .ArrayBar {
@@ -64,5 +86,48 @@ div, button {
     margin-left: 4rem;
     display: flex
     
+  }
+
+  form {
+    background: cornflowerblue;
+    padding: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    text-align: left;
+  }
+  
+  form label {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  form input {
+    min-width: 20rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    text-align: left;
+    border: none;
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+    outline: none;
+  }
+  
+  button[type] {
+    border: none;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Raleway", sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button[type]:hover {
+    background-color: darkblue;
+    color: aliceblue;
   }
 

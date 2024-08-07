@@ -3,6 +3,10 @@ import './App.css';
 import RuleHooks from './components/RuleHooks';
 import UseStateArray from './components/UseStateArray';
 import UseStateObj from './components/UseStateObj';
+import ShortCirEval from './components/ShortCirEval';
+import BasicForm from './components/Form/BasicForm';
+import UseEffect from './components/UseEffect/UseEffect';
+import UseEffectAPI from './components/UseEffect/UseEffectAPI';
 
 const App = () => {
 
@@ -33,8 +37,12 @@ const App = () => {
       <button className='btn' onClick={changeTitle}>Click Me</button> */}
     {/* <RuleHooks/> */}
 
-    <UseStateArray/>
+    {/* <UseStateArray/> */}
     {/* <UseStateObj/> */}
+    {/* <ShortCirEval /> */}
+    {/* <BasicForm/> */}
+    {/* <UseEffect/> */}
+    <UseEffectAPI/>
     </div>
   )
 }
